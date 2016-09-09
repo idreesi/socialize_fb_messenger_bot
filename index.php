@@ -6,7 +6,7 @@
  * Time: 6:06 PM
  */
 
-//file_put_contents('fb.txt', file_get_contents('php://input'));
+file_put_contents('fb.txt', file_get_contents('php://input'));
 $response = file_get_contents('php://input');
 //$response = '{"object":"page","entry":[{"id":"1090235634364764","time":1473256954637,"messaging":[{"sender":{"id":"1200858053291224"},"recipient":{"id":"1090235634364764"},"timestamp":1473256954532,"message":{"mid":"mid.1473256954511:7e40d6422dc151e234","seq":27,"text":"test"}}]}]}';
 //echo $response; exit;
@@ -29,9 +29,9 @@ foreach($response->entry as $entry) {
         $sender_id = $message_detail->sender->id;
         $message_text = $message_detail->message->text;
         if(strtolower($message_text)=='hi') {
-            $reply_message = 'Hi too';
+            $reply_message = 'Hi too2';
         } else {
-            $reply_message = 'Don\'t know what to say';
+            $reply_message = 'Don\'t know what to say2';
         }
 
         $send_message = array(
