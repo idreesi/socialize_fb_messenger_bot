@@ -5,7 +5,7 @@
  * Date: 9/7/2016
  * Time: 6:06 PM
  */
-/*$rec =  file_get_contents('php://input');
+$rec =  file_get_contents('php://input');
 if(!empty($rec)) {
     $count = file_get_contents('fb.txt');
     if(is_numeric($count)) {
@@ -14,9 +14,10 @@ if(!empty($rec)) {
     } else {
         file_put_contents('fb.txt', 0);
     }
-}*/
-file_put_contents('fb.txt', file_get_contents('php://input'));
-$response = file_get_contents('fb.txt');
+}
+exit;
+//file_put_contents('fb.txt', file_get_contents('php://input'));
+$response = NULL; //file_get_contents('fb.txt');
 //$response = '{"object":"page","entry":[{"id":"1090235634364764","time":1473256954637,"messaging":[{"sender":{"id":"1200858053291224"},"recipient":{"id":"1090235634364764"},"timestamp":1473256954532,"message":{"mid":"mid.1473256954511:7e40d6422dc151e234","seq":27,"text":"test"}}]}]}';
 //echo $response; exit;
 /*$replies = array(
