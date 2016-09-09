@@ -42,7 +42,7 @@ if(!empty($response)) {
                 if (strtolower($message_text) == 'hi') {
                     $reply_message = 'Hi too';
                 } else if (!empty($message_text)) {
-                    $reply_message = 'Don\'t know what to say2';
+                    $reply_message = 'Don\'t know what to say';
                 }
 
                 $send_message = array(
