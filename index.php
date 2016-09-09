@@ -40,7 +40,7 @@ if(!empty($response)) {
             if( isset($message_detail->message->text) && !empty($message_detail->message->text) ) {
                 $message_text = $message_detail->message->text;
                 if (strtolower($message_text) == 'hi') {
-                    $reply_message = 'Hi too2';
+                    $reply_message = 'Hi too';
                 } else if (!empty($message_text)) {
                     $reply_message = 'Don\'t know what to say2';
                 }
