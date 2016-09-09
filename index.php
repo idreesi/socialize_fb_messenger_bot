@@ -30,7 +30,7 @@ foreach($response->entry as $entry) {
         $message_text = $message_detail->message->text;
         if(strtolower($message_text)=='hi') {
             $reply_message = 'Hi too2';
-        } else {
+        } else if(!empty($message_text)) {
             $reply_message = 'Don\'t know what to say2';
         }
 
